@@ -15,7 +15,7 @@ int (*get_func(const char *format))(va_list)
 		{NULL, NULL}
 	};
 
-	while(list[i].t)
+	while (list[i].t)
 	{
 		if (*(list[i].t) == *format)
 			return (list[i].f);

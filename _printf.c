@@ -10,12 +10,12 @@ int _printf(const char *format, ...)
 	int i = 0;
 	int j = 0;
 	va_list args;
-
 	int (*f)(va_list);
+
 	va_start(args, format);
 
 	if (format == NULL || !format[i + 1])
-		return -1;
+		return (-1);
 	while (format[i])
 	{
 		if (format[i] == '%')
