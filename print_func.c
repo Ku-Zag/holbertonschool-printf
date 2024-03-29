@@ -21,7 +21,7 @@ int print_str(va_list args)
 	char *s = va_arg(args, char *);
 	if(s == NULL)
 		s = "(null)";
-	for (; s[i]; i++)
+	while (s[i])
 	{
 		_write(s[i]);
 	}
