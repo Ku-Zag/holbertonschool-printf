@@ -15,7 +15,7 @@ typedef struct type_s
 	char *t;
 	int (*f)(va_list);
 } func_t;
-
+int (*get_func(const char *format))(va_list);
 int _write(char c);
 int print_str(va_list args);
 int print_char(va_list args);

@@ -21,5 +21,5 @@ int (*get_func(const char *format))(va_list)
 			return (list[i].f);
 		i++;
 	}
-	returnn (NULL);
+	return (NULL);
 }
