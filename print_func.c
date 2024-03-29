@@ -17,13 +17,13 @@ int print_char(va_list args)
 
 int print_str(va_list args)
 {
-	int i;
-	char *str = va_arg(args, char *);
-	if(str == NULL)
-		str= "(null)";
-	for (i = 0; str[i]; i++)
+	int i = 0;
+	char *s = va_arg(args, char *);
+	if(s == NULL)
+		s = "(null)";
+	for (; s[i]; i++)
 	{
-		_write(str[i]);
+		_write(s[i]);
 	}
 	return (i);
 }
