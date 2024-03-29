@@ -24,6 +24,7 @@ int print_str(va_list args)
 	while (s[i])
 	{
 		_write(s[i]);
+		i++;
 	}
 	return (i);
 }
