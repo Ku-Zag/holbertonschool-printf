@@ -3,10 +3,37 @@
 /*
  * print_int -prints int
  * @args:int argument
- * Description:-_-
+ * Description: prints int
  *Return:0_0
  */
 int print_int(va_list args)
 {
 	int val;
-	unsigned int abs
+	unsigned int abs, i, length;
+	unsigned int count = 1;
+
+	length = 0;
+
+	val = va_arg(args, int);
+
+	if (val < 0)
+	{
+		length = length + _write('-');
+		abs = val * -1;
+	}
+	else
+		abs = val;
+	i = abs;
+	while (a > 9)
+	{
+		i = i / 10;
+		count = count * 10;
+	}
+	while (count >= 1)
+	{
+		len = len + _write(((abs / count) % 10) + '0');
+		count = count /10;
+	}
+	return (length);
+}
+
