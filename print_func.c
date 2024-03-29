@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * print_char -print chr
  * Description:prints chr
  * Return:chr
  * @args:argument
- */
-  
+*/
 int print_char(va_list args)
 {
 	_write(va_arg(args, int));
