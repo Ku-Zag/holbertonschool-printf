@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * print_char-print chr
+ * print_char -print chr
+ * Description:prints chr
  * print_str-prints str
+ * Description:prints str
  * print_pct-prints "%"
- *
+ * Descriptoin:prints "%"
  *@args:argument
  *Return:chr or str or "%"
  */
