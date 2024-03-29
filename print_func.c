@@ -3,19 +3,22 @@
 /**
  * print_char -print chr
  * Description:prints chr
- * print_str-prints str
- * Description:prints str
- * print_pct-prints "%"
- * Descriptoin:prints "%"
- *@args:argument
- *Return:chr or str or "%"
+ * Return:chr
+ * @args:argument
  */
-
+  
 int print_char(va_list args)
 {
 	_write(va_arg(args, int));
 	return (1);
 }
+
+/**
+ * print_str -prints str
+ * Descripton:prints str
+ * Return:str
+ * @args:arguments
+ */
 
 int print_str(va_list args)
 {
@@ -32,6 +35,12 @@ int print_str(va_list args)
 	return (i);
 }
 
+/**
+ * print_fs -prints "%"
+ * Description:prints "%"
+ * Return:"%"
+ * @args:arguments
+ */
 int print_fs(va_list args)
 {
 	(void)args;
