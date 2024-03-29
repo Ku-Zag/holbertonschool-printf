@@ -6,10 +6,8 @@
  * print_pct-prints "%"
  *
  *@args:argument
- *Return:chr
-*Return:str
-*Return:"%"
-*/
+ *Return:chr or str or "%" 
+ */
 
 int print_char(va_list args)
 {
