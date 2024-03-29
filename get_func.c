@@ -12,6 +12,8 @@ int (*get_func(const char *format))(va_list)
 		{"%", print_fs},
 		{"c", print_char},
 		{"s", print_str},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
