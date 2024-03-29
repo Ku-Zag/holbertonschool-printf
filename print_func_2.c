@@ -1,10 +1,9 @@
 #include "main.h"
-
-/*
- * print_int -prints int
- * @args:int argument
+/**
+ * print_int - prints int
+ * @args: int argument
  * Description: prints int
- *Return:0_0
+ * Return: integer
  */
 int print_int(va_list args)
 {
@@ -32,7 +31,7 @@ int print_int(va_list args)
 	while (count >= 1)
 	{
 		length += _write(((abs / count) % 10) + '0');
-		count = count /10;
+		count = count / 10;
 	}
 	return (length);
 }
