@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...);
 
-typedef struct type_s 
+typedef struct type_s
 {
 	char *t;
 	int (*f)(va_list);
@@ -20,4 +20,4 @@ int _write(char c);
 int print_str(va_list args);
 int print_char(va_list args);
 int print_fs(va_list args);
-#endif 
+#endif
