@@ -24,14 +24,14 @@ int print_int(va_list args)
 	else
 		abs = val;
 	i = abs;
-	while (a > 9)
+	while (i > 9)
 	{
 		i = i / 10;
 		count = count * 10;
 	}
 	while (count >= 1)
 	{
-		len = len + _write(((abs / count) % 10) + '0');
+		length += _write(((abs / count) % 10) + '0');
 		count = count /10;
 	}
 	return (length);
